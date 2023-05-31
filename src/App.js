@@ -7,7 +7,7 @@ import Contact from './Components/Contact';
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
       <Hero />
       <About />
       <Projects />
