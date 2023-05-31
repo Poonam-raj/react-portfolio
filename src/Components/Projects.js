@@ -1,11 +1,11 @@
 const Projects = () => {
   return (
     <section class="projects__section" id="projects">
-      <h2 class="projects__title">Projects</h2>
+      <h2 class="projects__title">Work</h2>
       <div class="projects__container">
         <div class="project__card">
           <img
-            src="src/images/NCNewsAPIScreenshot.jpg"
+            src="../images/NCNewsAPIScreenshot.jpg"
             alt="NC News Back End"
             class="project__image"
           />
@@ -41,7 +41,7 @@ const Projects = () => {
         </div>
         <div class="project__card">
           <img
-            src="src/images/NCNewsReactApp.jpg"
+            src="../images/NCNewsReactApp.jpg"
             alt="NC News Front End"
             class="project__image"
           />
@@ -73,48 +73,6 @@ const Projects = () => {
             </a>
           </p>
         </div>
-        {/* <!-- <div class="project__card">
-          <img
-            src="src/images/20200919_172232.jpg"
-            alt="Project Three Image"
-            class="project__image"
-          />
-          <h3>Project Three</h3>
-          <p class="project__subtext">
-            This is my project blurb. It will be so entertaining and witty
-          </p>
-          <hr />
-          <p class="project__subtext">
-            <a
-              class="project-link"
-              href="www.github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View Here</a
-            >
-          </p>
-        </div>
-        <div class="project__card">
-          <img
-            src="src/images/20200919_172232.jpg"
-            alt="Project Four Image"
-            class="project__image"
-          />
-          <h3>Project Four</h3>
-          <p class="project__subtext">
-            This is my project blurb. It will be so entertaining and witty
-          </p>
-          <hr />
-          <p class="project__subtext">
-            <a
-              class="project-link"
-              href="www.github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View Here</a
-            >
-          </p>
-        </div> --> */}
       </div>
     </section>
   );
