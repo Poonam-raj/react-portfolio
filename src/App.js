@@ -1,8 +1,8 @@
-import Nav from './Components/Nav';
+// import Nav from './Components/Nav';
 import Hero from './Components/Hero';
 import About from './Components/About';
 import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+// import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
