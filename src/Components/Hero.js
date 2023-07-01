@@ -43,7 +43,7 @@ const Hero = () => {
         </a>
       </div> */}
       </section>
-      <p class="hero__job-title">Software Engineer and Mentor</p>
+      <p className="hero__job-title">Software Engineer and Mentor</p>
     </>
   );
 };
