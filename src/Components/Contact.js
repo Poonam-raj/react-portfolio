@@ -1,21 +1,40 @@
+import { useState } from 'react';
+
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: '', body: '' });
+
   return (
-    <footer class="contact__container" id="contact-me">
-      <h2 class="contact__title">Contact Me</h2>
+    <footer className="contact__container" id="contact-me">
+      <h2 className="contact__title">Contact Me</h2>
       <form
-        class="contact__form"
-        method="post"
-        action="MAILTO:p_rajput@hotmail.co.uk"
-        enctype="text/plain"
+        className="contact__form"
+        method="POST"
+        action="mailto:p_rajput@hotmail.co.uk"
+        encType="text/plain"
+        name="EmailForm"
       >
-        <p>
-          <input
-            class="contact__input"
-            required
-            type="text"
-            placeholder="Enter Name"
-          />
-        </p>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          onChange={(event) => {
+            return setFormData({ ...formData, name: event.target.value });
+          }}
+          value={formData.name}
+        />
+
+        <label htmlFor="ContactCommentt">Message:</label>
+        <textarea
+          id="ContactCommentt"
+          rows="6"
+          cols="20"
+          onChange={(event) => {
+            return setFormData({ ...formData, body: event.target.value });
+          }}
+          value={formData.body}
+        />
+        {/*         
         <p>
           <input
             class="contact__input"
@@ -37,10 +56,10 @@ const Contact = () => {
             placeholder="Enter Message"
             required
           ></textarea>
-        </p>
-        <p>
-          <input type="submit" value="SUBMIT" />
-        </p>
+        </p> */}
+        {/* <p> */}
+        <input type="submit" value="send" />
+        {/* </p> */}
       </form>
     </footer>
   );
