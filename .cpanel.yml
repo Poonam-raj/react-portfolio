@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=~/public_html/poonamrajput
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
