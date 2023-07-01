@@ -1,14 +1,14 @@
 const Projects = () => {
   return (
-    <section class="projects__section" id="projects">
+    <section id="projects">
       <h2 class="projects__title">Work</h2>
       <div class="projects__container">
-        <div class="project__card">
-          <img
+        <div class="project__card left">
+          {/* <img
             src="../images/NCNewsAPIScreenshot.jpg"
             alt="NC News Back End"
             class="project__image"
-          />
+          /> */}
           <h3>NC News Back End</h3>
           <p class="project__subtext">
             <em>
@@ -39,12 +39,12 @@ const Projects = () => {
             </a>
           </p>
         </div>
-        <div class="project__card">
-          <img
+        <div class="project__card right">
+          {/* <img
             src="../images/NCNewsReactApp.jpg"
             alt="NC News Front End"
             class="project__image"
-          />
+          /> */}
           <h3>NC News Front End</h3>
           <p class="project__subtext">
             <em>JS | HTML | CSS | React</em>

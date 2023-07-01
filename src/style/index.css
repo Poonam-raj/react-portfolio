@@ -15,7 +15,7 @@ code {
 :root {
   --main-background-color: #e9e5fa;
   --secondary-background-color: #0f6d68;
-  --main-font-color: #154356;
+  --main-font-color: #0f6d68;
   --secondary-font-color: #e9e5fa;
   --link-color: #5da191;
   --accent-color: teal;
@@ -81,7 +81,6 @@ a {
   /* font-family: 'Uchen', serif; */
 }
 
-.contact__form,
 .hero__subheader {
   margin: 0;
   font-size: var(--small-font-size);
@@ -125,9 +124,11 @@ a {
 }
 
 .about-me__headshot {
-  width: 200px;
-  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin-left: 50px;
+  object-fit: cover;
 }
 
 .about-me__technologies {
@@ -135,16 +136,34 @@ a {
 }
 
 .project__card {
-  width: 300px;
+  width: 75%;
   height: fit-content;
   /* box-shadow: 5px 5px 20px; */
   margin: 10px;
+  padding: 10px;
   background-color: var(--main-background-color);
+  color: var(--main-font-color);
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.left {
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 30px;
 }
 .projects__section {
   margin-left: 30px;
   margin-bottom: 30px;
-  color: var(--main-font-color);
 }
 
 .project__subtext {
