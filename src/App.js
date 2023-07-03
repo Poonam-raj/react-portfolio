@@ -2,6 +2,7 @@
 import Hero from './Components/Hero';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 // import Contact from './Components/Contact';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Projects />
       {/* <Contact /> */}
+      <Footer />
     </div>
   );
 }
